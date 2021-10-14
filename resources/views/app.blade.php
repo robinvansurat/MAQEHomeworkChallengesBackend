@@ -13,6 +13,7 @@
     </script>
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
@@ -32,16 +33,29 @@
                     <div class="col-12 col-md-6">
                         <div class="mb-3">
                             <label for="maqebot" class="form-label">maqebot</label>
-                            <input type="email" class="form-control" id="maqebot"
-                                placeholder="inter the code" onchange="maqebot()">
+                            <input type="email" class="form-control" id="maqebot" placeholder="inter the code"
+                                onchange="maqebot()">
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div id="result_codex">
-                            
-
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>MAQE Forum</h1>
+                        <p>You current timezone is: Asia/Bangkok</p>
+                        
+                    </div>
+                    @foreach ($posts as $item)
+                            <div class="col-12">
+                                {{$item->author_id}}
+                            </div>
+                        @endforeach
+
                 </div>
             </div>
         </div>

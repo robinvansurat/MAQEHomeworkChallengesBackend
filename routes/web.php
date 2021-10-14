@@ -14,13 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('app');
-});
+Route::get('/', [MaqebotController::class,"index"]);
 
-Route::get('/app', function ($id) {
-    return view('app');
-});
+Route::get('/api/authors', [MaqebotController::class,"authors"]);
+Route::get('/api/posts', [MaqebotController::class,"posts"]);
 
 Route::prefix('ajax')->group(function () {
     Route::post('/maqebot', [MaqebotController::class,"getCodex"]);
