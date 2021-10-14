@@ -16,12 +16,12 @@ function maqebot() {
             let html = '<p>X = '+response.x+'</p>'+
             '<p>Y = '+response.y+'</p>'+
             '<p>Direction = '+response.direction+'</p>'
-            $("#result_codex").append(html);
+            $("#result_codex").empty().append(html);
         },
         error: function (response) {
             console.log("error");
             console.log(response);
-            $("#result_codex").append("");
+            $("#result_codex").empty().append("");
             
         },
     });
