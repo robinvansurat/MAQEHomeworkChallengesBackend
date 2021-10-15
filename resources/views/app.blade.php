@@ -38,6 +38,7 @@
                         </div>
                     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <div class="col-12 col-md-6">
                         <div id="result_codex">
                         </div>
@@ -58,6 +59,8 @@
                             </div>
                         @endforeach
 
+=======
+>>>>>>> parent of 7d8d2a2 (Maqebot complate)
 =======
 >>>>>>> parent of 7d8d2a2 (Maqebot complate)
                     <div class="col-12 col-md-6"></div>
