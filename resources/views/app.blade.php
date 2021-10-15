@@ -37,14 +37,11 @@
                                 onchange="maqebot()">
                         </div>
                     </div>
-<<<<<<< HEAD
                     <div class="col-12 col-md-6">
                         <div id="result_codex">
                         </div>
                     </div>
-=======
                     <div class="col-12 col-md-6"></div>
->>>>>>> parent of 7d8d2a2 (Maqebot complate)
                 </div>
             </div>
             <div class="col-12 mt-3">
@@ -60,6 +57,7 @@
                             </div>
                         @endforeach
 
+                    <div class="col-12 col-md-6"></div>
                 </div>
             </div>
         </div>
