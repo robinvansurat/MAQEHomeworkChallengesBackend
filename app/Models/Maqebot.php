@@ -12,11 +12,6 @@ class Maqebot extends Model
     public static function decodeCodex($codex)
     {
         $codex = strtoupper($codex);
-        // $newStr = str_replace($delimiters, $delimiters[0], $codex); // 'foo. bar. baz.'
-
-        // $parts = preg_split('@(?<=R|W|L|\d)@', $codex);
-
-        // $arr = explode($delimiters[0], $codex);
         $chars = preg_split('//', $codex, -1, PREG_SPLIT_NO_EMPTY);
         $decode_codex = [];
         $previous = null;
@@ -28,7 +23,6 @@ class Maqebot extends Model
                 || (($previous === "R") && (is_numeric($value)))
                 || (($previous === "L") && (is_numeric($value)))
             ) {
-                // return ["false" => $decode_codex, $key => $value];
                 return false;
 
             } else {
@@ -53,8 +47,6 @@ class Maqebot extends Model
             $decode_codex[] = (int) $NR;
         }
 
-        return [$codex, $decode_codex]; // ['foo', 'bar', 'baz', '']
-        // $codex = preg_split('/ (R|W) /', $codex);
-        // return $codex;
+        return $decode_codex;
     }
 }

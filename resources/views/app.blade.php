@@ -33,8 +33,8 @@
                     <div class="col-12 col-md-6">
                         <div class="mb-3">
                             <label for="maqebot" class="form-label">maqebot</label>
-                            <input type="email" class="form-control" id="maqebot" placeholder="inter the code"
-                                onchange="maqebot()">
+                            <input type="email" class="form-control" id="maqebot"
+                                placeholder="Enter the code" onchange="maqebot()">
                         </div>
                     </div>
                     <div class="col-12 col-md-6">

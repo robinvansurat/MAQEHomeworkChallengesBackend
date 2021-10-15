@@ -17,6 +17,7 @@ function maqebot() {
         error: function (response) {
             console.log("error");
             console.log(response);
+            $("#result_codex").empty();
             
         },
     });

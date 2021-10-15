@@ -12,9 +12,8 @@ class MaqebotController extends Controller
     function getCodex(Request $request){
         $data = Maqebot::decodeCodex($request->codex);
         if ($data != false) {
-            return $data;
+            return Maqebot::findTheResult($data);
         } else {
-            // return Response::json(['error' => 'Error msg'], 404);
             return response()->json(['error' => 'Error msg'], 404);
         }
     }
