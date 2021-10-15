@@ -38,8 +38,6 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <div id="result_codex">
-                            
-
                         </div>
                     </div>
                 </div>
