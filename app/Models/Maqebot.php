@@ -12,7 +12,6 @@ class Maqebot extends Model
     public static function decodeCodex($codex)
     {
         $codex = strtoupper($codex);
-        $delimiters = ['R', 'L', 'W'];
         // $newStr = str_replace($delimiters, $delimiters[0], $codex); // 'foo. bar. baz.'
 
         // $parts = preg_split('@(?<=R|W|L|\d)@', $codex);
